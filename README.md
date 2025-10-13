@@ -30,26 +30,6 @@ A Volkswagen Brasil é uma das filiais do Grupo Volkswagen. Fundada em 1953, é 
 | **Aula 08** | 1-Dec | Dashboards Avançados no Metabase | 8h | Obrigatória |
 | **Aula 09** | 18-Dec | Integração Completa e Aplicação Prática | 8h | Obrigatória |
 
-## 📚 Autoestudos - Aula 01
-
-### Materiais de Estudo Obrigatórios
-
-| **Material** | **Tipo** | **Link** | **Duração** | **Objetivo** |
-|---------------|----------|----------|-------------|--------------|
-| **O Despertar da LogiTrack: Introdução à IoT e Arquitetura Básica** | Notion | [Acessar Material](https://cobalt-blarney-8b3.notion.site/O-Despertar-da-LogiTrack-Introdu-o-IoT-e-Arquitetura-B-sica-285256ceaea7801ea9cad5cf8102eb15) | 45 min | Conceitos fundamentais IoT |
-| **Internet of Things (IoT) Architecture \| IoT Tutorial for Beginners** | YouTube | [Assistir Vídeo](https://www.youtube.com/watch?v=FRxRT0DjE7A) | 30 min | Arquitetura IoT para iniciantes |
-| **Unpacking IoT Architecture: Layers and Components Explained** | Artigo | [Ler Artigo](https://deviceauthority.com/unpacking-iot-architecture-layers-and-components-explained/) | 30 min | Camadas e componentes IoT |
-| **Fundamentos Básicos de IoT** | Livro Digital | [Acessar Livro](https://integrada.minhabiblioteca.com.br/reader/books/9786556901947/pageid/28) | 1h | Fundamentos teóricos |
-
-### Cronograma de Autoestudos
-
-| **Período** | **Atividade** | **Material** | **Tempo** |
-|-------------|---------------|--------------|-----------|
-| **Pré-aula** | Leitura conceitual | O Despertar da LogiTrack | 45 min |
-| **Pré-aula** | Vídeo tutorial | IoT Architecture Tutorial | 30 min |
-| **Pós-aula** | Aprofundamento | Unpacking IoT Architecture | 30 min |
-| **Pós-aula** | Estudo teórico | Fundamentos Básicos de IoT | 1h |
-
 ---
 
 ## 🕐 Estrutura das Aulas
