@@ -104,9 +104,13 @@ graph TD
     I[Peças - Rodas/Bancos] --> A
     J[Veículos em Produção] --> A
     
-    style A fill:#e1f5fe
-    style F fill:#f3e5f5
-    style G fill:#e8f5e8
+    classDef sensor fill:#f9f9f9,stroke:#333,stroke-width:2px
+    classDef process fill:#f0f0f0,stroke:#333,stroke-width:2px
+    classDef output fill:#e8e8e8,stroke:#333,stroke-width:2px
+    
+    class A sensor
+    class B,C,D,E process
+    class F,G output
 ```
 
 ### Tecnologias Atuais
@@ -119,6 +123,61 @@ graph TD
 
 ---
 
+## 🏗️ Arquitetura IoT - 4 Camadas
+
+```mermaid
+graph TB
+    subgraph "Camada 4: Aplicação"
+        A1[Dashboard Operacional]
+        A2[Mobile App]
+        A3[Analytics & ML]
+    end
+    
+    subgraph "Camada 3: Processamento"
+        P1[Edge Computing]
+        P2[Cloud Processing]
+        P3[Database Time Series]
+    end
+    
+    subgraph "Camada 2: Comunicação"
+        C1[Cellular 4G/5G]
+        C2[WiFi 802.11]
+        C3[LoRa Long Range]
+    end
+    
+    subgraph "Camada 1: Dispositivos"
+        D1[GPS Sensor]
+        D2[Temperature Sensor]
+        D3[Accelerometer]
+        D4[Gyroscope]
+    end
+    
+    A1 --> P1
+    A2 --> P2
+    A3 --> P3
+    
+    P1 --> C1
+    P2 --> C2
+    P3 --> C3
+    
+    C1 --> D1
+    C2 --> D2
+    C3 --> D3
+    C3 --> D4
+    
+    classDef layer4 fill:#f9f9f9,stroke:#000,stroke-width:3px
+    classDef layer3 fill:#f0f0f0,stroke:#000,stroke-width:2px
+    classDef layer2 fill:#e8e8e8,stroke:#000,stroke-width:2px
+    classDef layer1 fill:#e0e0e0,stroke:#000,stroke-width:2px
+    
+    class A1,A2,A3 layer4
+    class P1,P2,P3 layer3
+    class C1,C2,C3 layer2
+    class D1,D2,D3,D4 layer1
+```
+
+---
+
 ## 🚀 Fases do Projeto (MVP)
 
 ### Roadmap do Projeto
@@ -127,9 +186,11 @@ graph TD
 gantt
     title Fases do Projeto Volkswagen IoT
     dateFormat  YYYY-MM-DD
+    axisFormat  %d/%m
+    
     section Análise As-Is
-    Mapeamento Dispositivos    :active, phase1, 2024-10-01, 2w
-    Análise Fluxos Dados       :phase1b, after phase1, 1w
+    Mapeamento Dispositivos    :done, phase1, 2024-10-01, 2w
+    Análise Fluxos Dados       :active, phase1b, after phase1, 1w
     Documentação Infraestrutura :phase1c, after phase1b, 1w
     
     section Benchmarking
@@ -177,6 +238,41 @@ gantt
 
 ---
 
+## 🔄 Fluxo de Decisão - Identificação de Gargalos
+
+```mermaid
+flowchart TD
+    Start([Início do Processo]) --> Collect[Coleta de Dados IoT]
+    Collect --> Process[Processamento em Tempo Real]
+    Process --> Analyze{Análise de Dados}
+    
+    Analyze -->|Normal| Continue[Continuar Produção]
+    Analyze -->|Anomalia| Alert[Gerar Alerta]
+    Analyze -->|Gargalo| Optimize[Otimizar Processo]
+    
+    Alert --> Dashboard[Dashboard Observabilidade]
+    Optimize --> Dashboard
+    Dashboard --> Decision[Tomada de Decisão]
+    Decision --> Action[Ação Corretiva]
+    Action --> Monitor[Monitoramento Contínuo]
+    Monitor --> Collect
+    
+    Continue --> End([Fim do Processo])
+    Action --> End
+    
+    classDef startEnd fill:#ffffff,stroke:#000000,stroke-width:3px
+    classDef process fill:#f5f5f5,stroke:#000000,stroke-width:2px
+    classDef decision fill:#e8e8e8,stroke:#000000,stroke-width:2px
+    classDef alert fill:#d0d0d0,stroke:#000000,stroke-width:2px
+    
+    class Start,End startEnd
+    class Collect,Process,Continue,Monitor process
+    class Analyze,Decision decision
+    class Alert,Optimize,Dashboard,Action alert
+```
+
+---
+
 ## 📈 Entregáveis Esperados
 
 ### Dashboard Principal
@@ -194,6 +290,33 @@ gantt
 ### Stakeholders
 - **Áreas de Operação** e **Logística** da Volkswagen
 - **Tomada de decisão estratégica** baseada em dados
+
+---
+
+## 📊 Sequência de Coleta de Dados
+
+```mermaid
+sequenceDiagram
+    participant S as Sensores
+    participant G as Gateway
+    participant P as Processamento
+    participant D as Dashboard
+    participant U as Usuário
+    
+    S->>G: Dados de Peças
+    G->>P: Transmissão IoT
+    P->>P: Análise em Tempo Real
+    P->>D: Métricas Processadas
+    D->>U: Visualização
+    U->>D: Interação
+    D->>P: Consulta Dados
+    P->>D: Resposta
+    D->>U: Resultado
+    
+    Note over S,U: Processo contínuo de monitoramento
+    Note over P: Edge + Cloud Computing
+    Note over D: Dashboard Observabilidade
+```
 
 ---
 
