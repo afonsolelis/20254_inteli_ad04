@@ -435,16 +435,6 @@ sequenceDiagram
 
 ---
 
-## 🎯 Próximos Passos
-
-1. **Análise detalhada** da arquitetura atual
-2. **Benchmarking** com montadoras líderes
-3. **Desenvolvimento** do painel de observabilidade
-4. **Implementação** e validação do MVP
-5. **Proposição** de melhorias arquiteturais
-
----
-
 **Este projeto representa uma oportunidade única de aplicar tecnologias IoT avançadas para otimizar processos produtivos de uma das maiores montadoras do Brasil.** 🚗✨
 
 ---
