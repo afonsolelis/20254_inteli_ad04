@@ -117,7 +117,7 @@ graph TD
 | **Categoria** | **Tecnologia** | **Função** |
 |---------------|----------------|------------|
 | **Hardware** | Leitores Keyence e SICK | Leitura de códigos |
-| **Software** | Sistema IoT proprietário | Processamento IoT |
+| **Software** | Node-RED | Processamento IoT |
 | **Infraestrutura** | Servidor dedicado | Aplicações IoT |
 | **Suporte** | 10+ pessoas | 4 plantas do Brasil |
 
@@ -129,14 +129,13 @@ graph TD
 graph TB
     subgraph "Camada 4: Aplicação"
         A1[Dashboard Operacional]
-        A2[Mobile App]
-        A3[Analytics & ML]
+        A2[Analytics & Relatórios]
     end
     
     subgraph "Camada 3: Processamento"
         P1[Edge Computing]
-        P2[Cloud Processing]
-        P3[Database Time Series]
+        P2[Database Time Series]
+        P3[Node-RED Processing]
     end
     
     subgraph "Camada 2: Comunicação"
@@ -146,15 +145,15 @@ graph TB
     end
     
     subgraph "Camada 1: Dispositivos"
-        D1[GPS Sensor]
-        D2[Temperature Sensor]
-        D3[Accelerometer]
-        D4[Gyroscope]
+        D1[Leitores Keyence]
+        D2[Leitores SICK]
+        D3[Sensores de Temperatura]
+        D4[Sensores de Vibração]
     end
     
     A1 --> P1
     A2 --> P2
-    A3 --> P3
+    A1 --> P3
     
     P1 --> C1
     P2 --> C2
@@ -170,7 +169,7 @@ graph TB
     classDef layer2 fill:#e8e8e8,stroke:#000,stroke-width:2px
     classDef layer1 fill:#e0e0e0,stroke:#000,stroke-width:2px
     
-    class A1,A2,A3 layer4
+    class A1,A2 layer4
     class P1,P2,P3 layer3
     class C1,C2,C3 layer2
     class D1,D2,D3,D4 layer1
@@ -297,24 +296,24 @@ flowchart TD
 
 ```mermaid
 sequenceDiagram
-    participant S as Sensores
-    participant G as Gateway
-    participant P as Processamento
+    participant K as Leitores Keyence/SICK
+    participant N as Node-RED
+    participant E as Edge Computing
     participant D as Dashboard
     participant U as Usuário
     
-    S->>G: Dados de Peças
-    G->>P: Transmissão IoT
-    P->>P: Análise em Tempo Real
-    P->>D: Métricas Processadas
+    K->>N: Dados de Peças
+    N->>E: Processamento IoT
+    E->>E: Análise em Tempo Real
+    E->>D: Métricas Processadas
     D->>U: Visualização
     U->>D: Interação
-    D->>P: Consulta Dados
-    P->>D: Resposta
+    D->>E: Consulta Dados
+    E->>D: Resposta
     D->>U: Resultado
     
-    Note over S,U: Processo contínuo de monitoramento
-    Note over P: Edge + Cloud Computing
+    Note over K,U: Processo contínuo de monitoramento
+    Note over E: Edge Computing + Node-RED
     Note over D: Dashboard Observabilidade
 ```
 
