@@ -20,15 +20,45 @@ A Volkswagen Brasil é uma das filiais do Grupo Volkswagen. Fundada em 1953, é 
 
 | **Aula** | **Data** | **Tema** | **Duração** | **Tipo** |
 |----------|----------|----------|-------------|----------|
-| **Aula 01** | 16-Oct | Introdução à IoT e Arquitetura Básica | 2h | Obrigatória |
-| **Aula 02** | 22-Oct | Precificação e Impactos Econômicos de IoT | 2h | Obrigatória |
-| **Aula 03** | 31-Oct | Componentes de Dispositivos e Protocolos de Comunicação IoT | 2h | Obrigatória |
-| **Aula 04** | 5-Nov | Segurança em IoT | 2h | Obrigatória |
-| **Aula 05** | 11-Nov | Coleta de Dados MQTT/HTTP | 2h | Obrigatória |
-| **Aula 06** | 18-Nov | Pipeline e Tratamentos de Dados | 2h | Obrigatória |
-| **Aula 07** | 28-Nov | Introdução ao Metabase e Criação de Dashboards | 2h | Obrigatória |
-| **Aula 08** | 1-Dec | Dashboards Avançados no Metabase | 2h | Obrigatória |
-| **Aula 09** | 18-Dec | Integração Completa e Aplicação Prática | 2h | Obrigatória |
+| **Aula 01** | 16-Oct | Introdução à IoT e Arquitetura Básica | 8h | Obrigatória |
+| **Aula 02** | 22-Oct | Precificação e Impactos Econômicos de IoT | 8h | Obrigatória |
+| **Aula 03** | 31-Oct | Componentes de Dispositivos e Protocolos de Comunicação IoT | 8h | Obrigatória |
+| **Aula 04** | 5-Nov | Segurança em IoT | 8h | Obrigatória |
+| **Aula 05** | 11-Nov | Coleta de Dados MQTT/HTTP | 8h | Obrigatória |
+| **Aula 06** | 18-Nov | Pipeline e Tratamentos de Dados | 8h | Obrigatória |
+| **Aula 07** | 28-Nov | Introdução ao Metabase e Criação de Dashboards | 8h | Obrigatória |
+| **Aula 08** | 1-Dec | Dashboards Avançados no Metabase | 8h | Obrigatória |
+| **Aula 09** | 18-Dec | Integração Completa e Aplicação Prática | 8h | Obrigatória |
+
+## 🕐 Estrutura das Aulas
+
+### Cronograma Diário
+| **Horário** | **Atividade** | **Duração** | **Descrição** |
+|-------------|---------------|-------------|---------------|
+| **08:00 - 10:00** | Autoestudo Acompanhado | 2h | Professor na sala para tirar dúvidas |
+| **10:00 - 12:00** | Instrução | 2h | Aula expositiva e conceitos teóricos |
+| **12:00 - 14:00** | Intervalo | 2h | Almoço e descanso |
+| **14:00 - 16:00** | Desenvolvimento | 2h | Atividades práticas e projeto |
+
+### Detalhamento das Atividades
+
+#### 🌅 Autoestudo Acompanhado (08:00 - 10:00)
+- **Objetivo:** Estudo individual com suporte do professor
+- **Atividades:** Leitura, exercícios, pesquisa, preparação
+- **Suporte:** Professor disponível para dúvidas e orientações
+- **Flexibilidade:** Alunos podem trabalhar em ritmo próprio
+
+#### 📚 Instrução (10:00 - 12:00)
+- **Objetivo:** Transmissão de conhecimento e conceitos
+- **Metodologia:** Aula expositiva, apresentações, discussões
+- **Conteúdo:** Fundamentos teóricos, casos de estudo, exemplos
+- **Interação:** Perguntas, debates, esclarecimentos
+
+#### 🛠️ Desenvolvimento (14:00 - 16:00)
+- **Objetivo:** Aplicação prática dos conceitos aprendidos
+- **Atividades:** Exercícios práticos, implementação, projeto
+- **Foco:** Projeto Atlas - desenvolvimento incremental
+- **Suporte:** Orientação técnica e resolução de problemas
 
 ---
 
