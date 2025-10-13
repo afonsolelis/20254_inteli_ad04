@@ -27,213 +27,161 @@ Apresentar conceitos fundamentais de IoT e arquitetura básica, aplicando no cas
 | **Unpacking IoT Architecture: Layers and Components Explained** | Artigo | [Ler Artigo](https://deviceauthority.com/unpacking-iot-architecture-layers-and-components-explained/) | 30 min | Camadas e componentes IoT |
 | **Fundamentos Básicos de IoT** | Livro Digital | [Acessar Livro](https://integrada.minhabiblioteca.com.br/reader/books/9786556901947/pageid/28) | 1h | Fundamentos teóricos |
 
-### Cronograma de Autoestudos
-
-| **Período** | **Atividade** | **Material** | **Tempo** |
-|-------------|---------------|--------------|-----------|
-| **Pré-aula** | Leitura conceitual | O Despertar da LogiTrack | 45 min |
-| **Pré-aula** | Vídeo tutorial | IoT Architecture Tutorial | 30 min |
-| **Pós-aula** | Aprofundamento | Unpacking IoT Architecture | 30 min |
-| **Pós-aula** | Estudo teórico | Fundamentos Básicos de IoT | 1h |
-
-### Atividades Complementares
-
-| **Atividade** | **Tempo** | **Status** | **Entregável** |
-|----------------|-----------|------------|----------------|
-| Exercício prático | 1 hora | ⏳ Pendente | Diagrama final |
-| Projeto Atlas | 1.5 horas | ⏳ Pendente | Documento técnico |
-| Pesquisa | 30 min | ⏳ Pendente | Relatório pesquisa |
-| Reflexão | 30 min | ⏳ Pendente | Relatório reflexão |
-
 ---
 
-## 📋 Caso de Estudo: LogiTrack
+## 🎭 Aula: "O Despertar da LogiTrack - War Room IoT"
 
-| **Aspecto** | **Descrição** |
-|-------------|---------------|
-| **Empresa** | LogiTrack (Transportadora fictícia) |
-| **Problema** | Falhas no monitoramento de caminhões |
-| **Solução** | Sistema IoT para rastreamento |
-| **Dados** | Temperatura, localização, vibração |
-| **Papel do Aluno** | Engenheiro de sistemas |
-| **Entregável** | Diagrama de arquitetura IoT |
+### 📖 Storytelling da Aula (30 minutos)
 
-## 🔗 Assuntos Relacionados
+#### **Cenário: A LogiTrack em Crise**
+*"É 8h da manhã de uma segunda-feira chuvosa em São Paulo. Na sala de reuniões da LogiTrack, o CEO Henrique Duarte olha para os números do último trimestre: 6% de perdas anuais, clientes insatisfeitos, concorrência digital avançando. Ele precisa de uma solução - e precisa dela agora."*
 
-| **Tópico** | **Relevância** |
-|------------|----------------|
-| Arquitetura de sistemas distribuídos | Base conceitual |
-| Computação em nuvem | Plataforma de processamento |
-| Tecnologia Industrial | Aplicação prática |
+#### **Os Personagens Entram em Cena**
+- **Marina Costa** (Engenheira de Software) - "Precisamos pensar em arquitetura, não em gadgets"
+- **Carlos Menezes** (Gerente de Operações) - "E se a conexão cair na estrada?"
+- **Juliana Prado** (Analista de Dados) - "Dados estruturados e rastreáveis"
+- **Pedro Nascimento** (Coordenador de TI) - "Gerenciamento e autenticação são essenciais"
 
----
+#### **O Desafio É Lançado**
+*"O conselho aprovou o Projeto Atlas. Vocês têm 90 dias para transformar nossa frota de 120 caminhões em unidades inteligentes. Mas primeiro, precisamos entender: o que é IoT? Como funciona? Qual a arquitetura que nos salvará?"*
 
-## 🕐 Agenda da Aula
+### 🎯 Metodologia Ativa: "War Room IoT"
 
-| **Horário** | **Atividade** | **Duração** | **Tipo** | **Objetivo** |
-|-------------|---------------|-------------|----------|--------------|
-| 0:00-0:15 | Daily dos Grupos | 15 min | Reunião | Alinhamento |
-| 0:15-0:30 | Introdução | 15 min | Teórica | Contextualização |
-| 0:30-1:00 | Conteúdo Teórico | 30 min | Teórica | Fundamentos IoT |
-| 1:00-1:30 | Atividade Prática | 30 min | Prática | Diagrama LogiTrack |
-| 1:30-1:45 | Discussão | 15 min | Interativa | Dúvidas |
-| 1:45-2:00 | Fechamento | 15 min | Síntese | Orientações |
+#### **Fase 1: Apresentação Teórica (30 min)**
+**Professor como "Henrique Duarte"** - Apresenta o problema da LogiTrack:
 
-## 📚 Conteúdo Teórico
+1. **Contexto Empresarial** (10 min)
+   - LogiTrack: 120 caminhões, 3 centros de distribuição
+   - Problema: 6% de perdas, falta de rastreabilidade
+   - Solução: Projeto Atlas - IoT para monitoramento
 
-### Definição IoT
+2. **Conceitos IoT Fundamentais** (15 min)
+   - **Definição:** Rede de objetos físicos conectados
+   - **Arquitetura 4 Camadas:** Percepção → Rede → Processamento → Aplicação
+   - **Fluxo de Dados:** Sensor → Gateway → Servidor → Dashboard
 
-| **Aspecto** | **Descrição** |
-|-------------|---------------|
-| **Definição** | Rede de objetos físicos com sensores, software e conectividade |
-| **Características** | Conectividade, Sensoriamento, Processamento, Automação, Interoperabilidade |
-| **Evolução** | RFID → Dispositivos Inteligentes → IoT Massivo |
-| **Impacto** | Transformação digital das indústrias |
+3. **O Dilema da LogiTrack** (5 min)
+   - "E se a conexão cair na estrada?"
+   - Robustez vem do desenho, não do improviso
+   - Arquitetura define comportamento sob falhas
 
-### Arquitetura IoT - 4 Camadas
+#### **Fase 2: Atividade Prática - "War Room IoT" (1h 15min)**
 
-| **Camada** | **Componentes** | **Função** | **Exemplos** |
-|------------|-----------------|------------|--------------|
-| **4. Aplicação** | Dashboards, APIs, ML | Visualização e análise | Metabase, Grafana |
-| **3. Processamento** | Edge, Cloud, Fog | Análise e transformação | AWS, Azure, Edge |
-| **2. Comunicação** | WiFi, Bluetooth, LoRa | Conectividade | Gateways, Redes |
-| **1. Periféricos** | Sensores, Atuadores | Coleta e ação | Arduino, ESP32 |
+### 🏗️ **Atividade: Construindo a Arquitetura IoT da LogiTrack**
 
-### Componentes por Camada
+#### **Setup da Atividade**
+- **5 grupos** já formados
+- **Cada grupo** representa uma "equipe técnica" da LogiTrack
+- **Material:** Quadros brancos, post-its, canetas, templates de arquitetura
 
-| **Camada** | **Sensores** | **Atuadores** | **Protocolos** | **Plataformas** |
-|------------|--------------|---------------|----------------|-----------------|
-| **Periféricos** | GPS, Temperatura, Vibração | Motores, LEDs, Alarmes | - | Arduino, Raspberry Pi |
-| **Comunicação** | - | - | WiFi, Bluetooth, LoRa | Gateways, Routers |
-| **Processamento** | - | - | HTTP, MQTT | AWS, Azure, Edge |
-| **Aplicação** | - | - | REST, GraphQL | Dashboards, Apps |
+#### **Cronograma Detalhado da Atividade**
 
-### Fluxo de Dados IoT
+| **Tempo** | **Atividade** | **Descrição** | **Entregável** |
+|-----------|---------------|---------------|----------------|
+| **0-15 min** | **Análise do Problema** | Grupos analisam o caso LogiTrack | Lista de requisitos |
+| **15-45 min** | **Desenho da Arquitetura** | Criar diagrama IoT 4 camadas | Diagrama no quadro |
+| **45-60 min** | **Apresentação Rápida** | Cada grupo apresenta (3 min) | Pitch da solução |
+| **60-75 min** | **Feedback e Refinamento** | Discussão coletiva e melhorias | Arquitetura final |
 
-| **Etapa** | **Processo** | **Tecnologia** | **Resultado** |
-|-----------|--------------|----------------|---------------|
-| **1. Coleta** | Sensoriamento → Pré-processamento → Transmissão | Sensores → Microcontroladores → Protocolos | Dados brutos |
-| **2. Processamento** | Armazenamento → Análise → Insights | Bancos de dados → Algoritmos → ML | Informações |
-| **3. Ação** | Decisões → Atuação → Feedback | APIs → Atuadores → Monitoramento | Controle |
+#### **Instruções Detalhadas para os Grupos**
 
----
+### 📋 **Roteiro da Atividade**
 
-## 🏢 Caso de Estudo: LogiTrack
+#### **1. Análise do Problema (15 min)**
+**Perguntas para os grupos:**
+- Quais dados a LogiTrack precisa coletar?
+- Quais sensores são necessários?
+- Como garantir conectividade na estrada?
+- Onde processar e armazenar os dados?
 
-### Contexto da Empresa
+**Template de Análise:**
+```
+PROBLEMA: Falta de rastreabilidade da LogiTrack
+DADOS NECESSÁRIOS: [Listar]
+SENSORES: [Listar]
+CONECTIVIDADE: [Definir]
+PROCESSAMENTO: [Onde e como]
+```
 
-| **Aspecto** | **Situação Atual** | **Objetivo IoT** |
-|-------------|-------------------|------------------|
-| **Empresa** | Transportadora de médio porte | Sistema IoT integrado |
-| **Monitoramento** | Falhas no rastreamento | Localização GPS em tempo real |
-| **Carga** | Perda por falta de controle | Monitoramento de temperatura |
-| **Operação** | Rotas não otimizadas | Análise de vibração e otimização |
-| **Custos** | Manutenção reativa | Redução de custos operacionais |
+#### **2. Desenho da Arquitetura (30 min)**
+**Cada grupo deve criar um diagrama com:**
 
-### Requisitos Técnicos
+**Camada 1 - Percepção (Sensores)**
+- GPS, Temperatura, Vibração, Umidade
+- Localização: Caminhões, cargas, motoristas
 
-| **Categoria** | **Componente** | **Função** | **Tecnologia** |
-|---------------|-----------------|------------|----------------|
-| **Sensores** | GPS | Localização | Satélite |
-| | Temperatura | Carga refrigerada | Termistor |
-| | Acelerômetro | Vibrações/Impactos | MEMS |
-| | Giroscópio | Orientação | MEMS |
-| | Pressão | Pneus | Sensor de pressão |
-| **Comunicação** | Cellular | Conectividade principal | 4G/5G |
-| | WiFi | Depósitos | 802.11 |
-| | LoRa | Áreas remotas | Long Range |
-| **Processamento** | Edge | Alertas críticos | Local |
-| | Cloud | Análise histórica | AWS/Azure |
-| | Dashboard | Visualização | Web/Mobile |
+**Camada 2 - Rede (Comunicação)**
+- 4G/5G para estrada
+- WiFi para depósitos
+- LoRa para áreas remotas
 
----
+**Camada 3 - Processamento**
+- Edge Computing (local)
+- Cloud Computing (central)
+- Banco de dados
 
-## 🛠️ Atividade Prática
+**Camada 4 - Aplicação**
+- Dashboard operacional
+- Alertas em tempo real
+- Relatórios gerenciais
 
-### Objetivo
-Desenvolver diagrama de arquitetura IoT para LogiTrack com 4 camadas e fluxos de dados.
+#### **3. Apresentação Rápida (15 min)**
+**Cada grupo tem 3 minutos para:**
+- Explicar sua arquitetura
+- Justificar escolhas técnicas
+- Responder uma pergunta do "CEO"
 
-### Cronograma da Atividade
+#### **4. Feedback e Refinamento (15 min)**
+**Discussão coletiva:**
+- Quais soluções foram mais criativas?
+- Como resolver o problema da conectividade?
+- Qual arquitetura é mais robusta?
 
-| **Fase** | **Tempo** | **Atividade** | **Entregável** |
-|----------|-----------|---------------|----------------|
-| **Análise** | 10 min | Identificar sensores e requisitos | Lista de componentes |
-| **Desenho** | 15 min | Criar diagrama com 4 camadas | Diagrama de arquitetura |
-| **Validação** | 5 min | Revisar e refinar | Diagrama final |
+### 🎭 **Dinâmicas Especiais**
 
-### Template de Arquitetura
+#### **Role-Playing**
+- **Professor:** CEO Henrique Duarte
+- **Alunos:** Equipe técnica da LogiTrack
+- **Cenário:** War room com pressão de tempo
 
-| **Camada** | **Componentes LogiTrack** | **Tecnologia** |
-|------------|----------------------------|----------------|
-| **Aplicação** | Dashboard Operacional, Mobile App, Analytics | Web, Mobile, ML |
-| **Processamento** | Edge Computing, Cloud Processing, Database | Local, AWS/Azure, Time Series |
-| **Comunicação** | Cellular (4G/5G), WiFi, LoRa | 4G/5G, 802.11, Long Range |
-| **Dispositivos** | GPS, Temperatura, Acelerômetro, Giroscópio | Satélite, Termistor, MEMS |
+#### **Gamificação**
+- **Pontos por:** Criatividade, Viabilidade técnica, Robustez
+- **Desafio:** "E se a conexão cair?" - Como sua arquitetura resolve?
+- **Prêmio:** Melhor arquitetura vira referência da LogiTrack
 
-### Critérios de Avaliação
+#### **Storytelling Contínuo**
+- **Início:** "A LogiTrack está em crise..."
+- **Meio:** "Vocês são a última esperança..."
+- **Fim:** "O Projeto Atlas começa aqui..."
+
+### 📊 **Critérios de Avaliação**
 
 | **Critério** | **Peso** | **Descrição** |
 |------------|----------|---------------|
-| **Completude** | 30% | Todos os componentes necessários |
-| **Clareza** | 25% | Diagrama fácil de entender |
-| **Técnica** | 25% | Uso correto dos conceitos IoT |
-| **Aplicabilidade** | 20% | Solução viável para LogiTrack |
+| **Completude** | 25% | Todas as 4 camadas presentes |
+| **Criatividade** | 25% | Soluções inovadoras para problemas |
+| **Viabilidade** | 25% | Solução tecnicamente possível |
+| **Robustez** | 25% | Como lidar com falhas e limitações |
 
-## 📋 Materiais
+### 🎯 **Objetivos de Aprendizagem**
 
-| **Categoria** | **Recurso** | **Tipo** |
-|----------------|-------------|----------|
-| **Obrigatórios** | Slides da aula | PDF |
-| | Documentação técnica | Web |
-| | Ferramentas desenho | Software |
-| | Caso LogiTrack | Documento |
-| **Complementares** | Artigos técnicos | Web |
-| | Vídeos demonstração | YouTube |
-| | Templates diagramas | Download |
-| | Fóruns discussão | Online |
+**Ao final da aula, os alunos serão capazes de:**
+- ✅ Compreender arquitetura IoT em múltiplas camadas
+- ✅ Identificar componentes físicos e lógicos
+- ✅ Desenhar diagramas de arquitetura básica
+- ✅ Reconhecer decisões que impactam escalabilidade
+- ✅ Trabalhar em equipe sob pressão
+- ✅ Apresentar soluções técnicas de forma clara
 
-## 🎯 Objetivos de Aprendizagem
+### 🚀 **Fechamento da Aula**
 
-| **Categoria** | **Objetivo** | **Status** |
-|----------------|--------------|------------|
-| **Conhecimentos** | Compreender conceitos IoT | ⏳ |
-| | Entender arquitetura camadas | ⏳ |
-| | Conhecer componentes | ⏳ |
-| | Identificar protocolos | ⏳ |
-| **Habilidades** | Desenhar diagramas | ⏳ |
-| | Analisar requisitos | ⏳ |
-| | Selecionar componentes | ⏳ |
-| | Aplicar conceitos | ⏳ |
-| **Atitudes** | Trabalhar em equipe | ⏳ |
-| | Pensar criticamente | ⏳ |
-| | Comunicar ideias | ⏳ |
-| | Adaptar-se | ⏳ |
+**Professor como "Henrique Duarte":**
+*"Excelente trabalho, equipe! Vocês transformaram um problema em uma oportunidade. O Projeto Atlas começa aqui, mas não termina. Nas próximas semanas, vamos descobrir quanto tudo isso vai custar e como implementar. A LogiTrack está nas mãos de vocês!"*
 
-## 📝 Entregáveis
-
-| **Entregável** | **Formato** | **Prazo** | **Peso** |
-|-----------------|-------------|-----------|----------|
-| Diagrama Arquitetura | PNG/PDF | Final aula | 40% |
-| Documentação Técnica | Markdown/Word | 1 semana | 30% |
-| Reflexão Crítica | Texto | 1 semana | 30% |
-
-## 🔄 Próximos Passos
-
-| **Aula** | **Tema** | **Foco** | **Preparação** |
-|----------|----------|----------|----------------|
-| **Semana 2** | Precificação IoT | Análise custos/ROI | Modelos precificação |
-| **Semana 3** | Componentes IoT | Seleção dispositivos | Protocolos comunicação |
-| **Semana 4** | Segurança IoT | Implementação segurança | Frameworks segurança |
-
-## 📞 Suporte
-
-| **Canal** | **Contato** | **Horário** | **Local** |
-|-----------|-------------|-------------|-----------|
-| **Professor** | Afonso Cesar | Seg-Sex 14h-16h | Sala 205 |
-| **Email** | afonso.cesar@inteli.edu.br | 24h | Online |
-| **Slack** | #projeto-atlas-iot | 24h | Online |
-| **Teams** | Canal do curso | 24h | Online |
+**Juliana Prado (narradora):**
+*"Hoje deixamos de falar em problemas isolados e passamos a falar em sistema. O Atlas começa aqui."*
 
 ---
 
-**Esta aula estabelece a base técnica para todo o Projeto Atlas. 🚀**
+## 📚 Conteúdo Teórico
+
