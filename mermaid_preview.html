@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mermaid Diagrams - Volkswagen IoT</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .diagram {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .mermaid {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>🚗 Diagramas Mermaid - Projeto Volkswagen IoT</h1>
+    
+    <div class="diagram">
+        <h2>Fluxo de Dados IoT - Volkswagen</h2>
+        <div class="mermaid">
+graph TD
+    A[Sensores Keyence/SICK] --> B[Coleta de Dados]
+    B --> C[Processamento IoT]
+    C --> D[Servidor Dedicado]
+    D --> E[Análise de Dados]
+    E --> F[Dashboard Observabilidade]
+    F --> G[Tomada de Decisão]
+    
+    H[Linha de Montagem] --> A
+    I[Peças - Rodas/Bancos] --> A
+    J[Veículos em Produção] --> A
+    
+    style A fill:#e1f5fe
+    style F fill:#f3e5f5
+    style G fill:#e8f5e8
+        </div>
+    </div>
+
+    <div class="diagram">
+        <h2>Roadmap do Projeto</h2>
+        <div class="mermaid">
+gantt
+    title Fases do Projeto Volkswagen IoT
+    dateFormat  YYYY-MM-DD
+    section Análise As-Is
+    Mapeamento Dispositivos    :active, phase1, 2024-10-01, 2w
+    Análise Fluxos Dados       :phase1b, after phase1, 1w
+    Documentação Infraestrutura :phase1c, after phase1b, 1w
+    
+    section Benchmarking
+    Pesquisa Montadoras        :phase2, after phase1c, 2w
+    Análise Melhores Práticas  :phase2b, after phase2, 1w
+    
+    section Proposição To-Be
+    Recomendações Estratégicas :phase3, after phase2b, 2w
+    Plano Otimização          :phase3b, after phase3, 1w
+    
+    section Desenvolvimento
+    Dashboard MVP             :phase4, after phase3b, 3w
+    Implementação e Testes    :phase4b, after phase4, 2w
+        </div>
+    </div>
+
+    <div class="diagram">
+        <h2>Arquitetura IoT - 4 Camadas</h2>
+        <div class="mermaid">
+graph TB
+    subgraph "Camada 4: Aplicação"
+        A1[Dashboard Operacional]
+        A2[Mobile App]
+        A3[Analytics & ML]
+    end
+    
+    subgraph "Camada 3: Processamento"
+        P1[Edge Computing]
+        P2[Cloud Processing]
+        P3[Database Time Series]
+    end
+    
+    subgraph "Camada 2: Comunicação"
+        C1[Cellular 4G/5G]
+        C2[WiFi 802.11]
+        C3[LoRa Long Range]
+    end
+    
+    subgraph "Camada 1: Dispositivos"
+        D1[GPS Sensor]
+        D2[Temperature Sensor]
+        D3[Accelerometer]
+        D4[Gyroscope]
+    end
+    
+    A1 --> P1
+    A2 --> P2
+    A3 --> P3
+    
+    P1 --> C1
+    P2 --> C2
+    P3 --> C3
+    
+    C1 --> D1
+    C2 --> D2
+    C3 --> D3
+    C3 --> D4
+    
+    style A1 fill:#e3f2fd
+    style A2 fill:#e3f2fd
+    style A3 fill:#e3f2fd
+    style P1 fill:#f3e5f5
+    style P2 fill:#f3e5f5
+    style P3 fill:#f3e5f5
+    style C1 fill:#e8f5e8
+    style C2 fill:#e8f5e8
+    style C3 fill:#e8f5e8
+    style D1 fill:#fff3e0
+    style D2 fill:#fff3e0
+    style D3 fill:#fff3e0
+    style D4 fill:#fff3e0
+        </div>
+    </div>
+
+    <div class="diagram">
+        <h2>Fluxo de Decisão - Gargalos</h2>
+        <div class="mermaid">
+flowchart TD
+    Start([Início do Processo]) --> Collect[Coleta de Dados IoT]
+    Collect --> Process[Processamento em Tempo Real]
+    Process --> Analyze{Análise de Dados}
+    
+    Analyze -->|Normal| Continue[Continuar Produção]
+    Analyze -->|Anomalia| Alert[Gerar Alerta]
+    Analyze -->|Gargalo| Optimize[Otimizar Processo]
+    
+    Alert --> Dashboard[Dashboard Observabilidade]
+    Optimize --> Dashboard
+    Dashboard --> Decision[Tomada de Decisão]
+    Decision --> Action[Ação Corretiva]
+    Action --> Monitor[Monitoramento Contínuo]
+    Monitor --> Collect
+    
+    Continue --> End([Fim do Processo])
+    Action --> End
+    
+    style Start fill:#4caf50
+    style End fill:#f44336
+    style Alert fill:#ff9800
+    style Optimize fill:#2196f3
+    style Dashboard fill:#9c27b0
+        </div>
+    </div>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            themeVariables: {
+                primaryColor: '#1976d2',
+                primaryTextColor: '#ffffff',
+                primaryBorderColor: '#0d47a1',
+                lineColor: '#666666',
+                secondaryColor: '#f5f5f5',
+                tertiaryColor: '#ffffff'
+            }
+        });
+    </script>
+</body>
+</html>
