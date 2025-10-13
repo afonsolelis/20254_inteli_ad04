@@ -16,6 +16,22 @@ A Volkswagen Brasil é uma das filiais do Grupo Volkswagen. Fundada em 1953, é 
 
 ---
 
+## 📅 Cronograma de Aulas
+
+| **Aula** | **Data** | **Tema** | **Duração** | **Tipo** |
+|----------|----------|----------|-------------|----------|
+| **Aula 01** | 16-Oct | Introdução à IoT e Arquitetura Básica | 2h | Obrigatória |
+| **Aula 02** | 22-Oct | Precificação e Impactos Econômicos de IoT | 2h | Obrigatória |
+| **Aula 03** | 31-Oct | Componentes de Dispositivos e Protocolos de Comunicação IoT | 2h | Obrigatória |
+| **Aula 04** | 5-Nov | Segurança em IoT | 2h | Obrigatória |
+| **Aula 05** | 11-Nov | Coleta de Dados MQTT/HTTP | 2h | Obrigatória |
+| **Aula 06** | 18-Nov | Pipeline e Tratamentos de Dados | 2h | Obrigatória |
+| **Aula 07** | 28-Nov | Introdução ao Metabase e Criação de Dashboards | 2h | Obrigatória |
+| **Aula 08** | 1-Dec | Dashboards Avançados no Metabase | 2h | Obrigatória |
+| **Aula 09** | 18-Dec | Integração Completa e Aplicação Prática | 2h | Obrigatória |
+
+---
+
 ## 🚨 Problema Identificado
 
 ### Situação Atual
