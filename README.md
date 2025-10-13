@@ -163,7 +163,7 @@ graph TD
 | **Categoria** | **Tecnologia** | **Função** |
 |---------------|----------------|------------|
 | **Hardware** | Leitores Keyence e SICK | Leitura de códigos |
-| **Software** | Node-RED | Processamento IoT |
+| **Software** | Sistema IoT proprietário | Processamento IoT |
 | **Infraestrutura** | Servidor dedicado | Aplicações IoT |
 | **Suporte** | 10+ pessoas | 4 plantas do Brasil |
 
@@ -181,7 +181,7 @@ graph TB
     subgraph "Camada 3: Processamento"
         P1[Edge Computing]
         P2[Database Time Series]
-        P3[Node-RED Processing]
+        P3[Processamento Local]
     end
     
     subgraph "Camada 2: Comunicação"
@@ -343,13 +343,13 @@ flowchart TD
 ```mermaid
 sequenceDiagram
     participant K as Leitores Keyence/SICK
-    participant N as Node-RED
+    participant G as Gateway IoT
     participant E as Edge Computing
     participant D as Dashboard
     participant U as Usuário
     
-    K->>N: Dados de Peças
-    N->>E: Processamento IoT
+    K->>G: Dados de Peças
+    G->>E: Processamento IoT
     E->>E: Análise em Tempo Real
     E->>D: Métricas Processadas
     D->>U: Visualização
@@ -359,7 +359,7 @@ sequenceDiagram
     D->>U: Resultado
     
     Note over K,U: Processo contínuo de monitoramento
-    Note over E: Edge Computing + Node-RED
+    Note over E: Edge Computing + Processamento Local
     Note over D: Dashboard Observabilidade
 ```
 
