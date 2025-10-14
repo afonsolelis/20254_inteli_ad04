@@ -96,6 +96,7 @@ Apresentar conceitos fundamentais de IoT e arquitetura básica, aplicando no cas
 ### 🚨 O Dilema da LogiTrack: "E se a conexão cair na estrada?"
 
 **Problema Real:** Conectividade não é garantida em todas as áreas
+
 **Solução:** Arquitetura robusta com:
 - Armazenamento local (Edge Computing)
 - Sincronização quando conectividade retorna
@@ -108,7 +109,7 @@ Apresentar conceitos fundamentais de IoT e arquitetura básica, aplicando no cas
 
 **Instruções para os Grupos:**
 1. **Analisem o problema** da LogiTrack (15 min)
-2. **Desenhem a arquitetura** com 4 camadas (30 min)
+2. **Desenhem a arquitetura como vocês acham que está hoje** com 4 camadas (30 min)
 3. **Apresentem a solução** (3 min por grupo)
 4. **Discussão coletiva** com perguntas-chave (15 min)
 
@@ -179,8 +180,3 @@ Camada 1 - Percepção: GPS + Temperatura + Vibração
 **Hoje:** Entendemos o que é IoT e sua arquitetura básica
 **Próxima aula:** Descobriremos quanto tudo isso vai custar - precificação e impactos econômicos
 **Projeto Atlas:** Começa aqui, mas não termina aqui
-
----
-
-## 📚 Conteúdo Teórico
-
