@@ -7,8 +7,6 @@
 | **Professor** | Afonso Cesar |
 | **Unidade** | Semana 01 |
 | **Data** | 16/10/2025 - 10:00h |
-| **Tipo** | Obrigatória |
-| **Ponderação** | Não ponderada |
 | **Duração Total** | 2 horas |
 | **Daily Inicial** | 15 minutos |
 | **Tempo Efetivo** | 1h 45min |
@@ -178,5 +176,7 @@ Camada 1 - Percepção: GPS + Temperatura + Vibração
 ### 🚀 Próximos Passos
 
 **Hoje:** Entendemos o que é IoT e sua arquitetura básica
+
 **Próxima aula:** Descobriremos quanto tudo isso vai custar - precificação e impactos econômicos
+
 **Projeto Atlas:** Começa aqui, mas não termina aqui
