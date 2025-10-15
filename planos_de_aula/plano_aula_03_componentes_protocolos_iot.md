@@ -273,7 +273,7 @@ void setup() {
 ### **Projeto Atlas**
 - **Status:** Componentes e protocolos selecionados
 - **Próximo passo:** Implementação de segurança
-- **Entregas:** Lista de componentes e protocolos selecionados
+- **Deliverables:** Lista de componentes e protocolos selecionados
 
 ## 📝 Observações e Adaptações
 

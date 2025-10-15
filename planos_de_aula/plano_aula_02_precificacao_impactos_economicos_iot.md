@@ -199,7 +199,7 @@ Ao final desta aula, os alunos serão capazes de:
 ### **Projeto Atlas**
 - **Status:** Análise econômica concluída
 - **Próximo passo:** Seleção de componentes baseada em viabilidade
-- **Entregas:** Planilha de custos e análise de ROI
+- **Deliverables:** Planilha de custos e análise de ROI
 
 ## 📝 Observações e Adaptações
 

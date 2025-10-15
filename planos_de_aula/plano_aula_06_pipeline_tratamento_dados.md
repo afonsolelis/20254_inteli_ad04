@@ -333,7 +333,7 @@ client.write_points(json_body)
 ### **Projeto Atlas**
 - **Status:** Pipeline de dados implementado
 - **Próximo passo:** Criação de dashboards
-- **Entregas:** Pipeline funcionando com dados
+- **Deliverables:** Pipeline funcionando com dados
 
 ## 📝 Observações e Adaptações
 

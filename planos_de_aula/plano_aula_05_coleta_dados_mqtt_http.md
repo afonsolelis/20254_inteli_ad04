@@ -323,7 +323,7 @@ void sendSensorData() {
 ### **Projeto Atlas**
 - **Status:** Protocolo de coleta selecionado
 - **Próximo passo:** Implementação de pipeline de dados
-- **Entregas:** Sistema de coleta funcionando
+- **Deliverables:** Sistema de coleta funcionando
 
 ## 📝 Observações e Adaptações
 

@@ -190,7 +190,7 @@ Ao final desta aula, os alunos serão capazes de:
 ### **Projeto Atlas**
 - **Status:** Iniciado nesta aula
 - **Desenvolvimento:** Contínuo ao longo do semestre
-- **Entregas:** Incrementais a cada aula
+- **Deliverables:** Incrementais a cada aula
 
 ## 📝 Observações e Adaptações
 

@@ -273,12 +273,12 @@ query.awaitTermination()
 ### **Para o Projeto Atlas**
 - **Status:** Solução completa implementada
 - **Próximo passo:** Deploy em produção
-- **Entregas:** Sistema funcionando end-to-end
+- **Deliverables:** Sistema funcionando end-to-end
 
 ### **Para o Curso**
 - **Status:** Curso concluído
 - **Próximo passo:** Aplicação em projetos reais
-- **Entregas:** Conhecimento aplicado
+- **Deliverables:** Conhecimento aplicado
 
 ## 📝 Observações e Adaptações
 

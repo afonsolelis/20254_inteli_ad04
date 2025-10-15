@@ -250,7 +250,7 @@ def send_alert(data):
 ### **Projeto Atlas**
 - **Status:** Dashboards avançados criados
 - **Próximo passo:** Integração completa
-- **Entregas:** Dashboard avançado funcionando
+- **Deliverables:** Dashboard avançado funcionando
 
 ## 📝 Observações e Adaptações
 

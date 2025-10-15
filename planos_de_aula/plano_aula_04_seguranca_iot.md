@@ -265,7 +265,7 @@ def create_secure_connection(host, port):
 ### **Projeto Atlas**
 - **Status:** Plano de segurança desenvolvido
 - **Próximo passo:** Implementação de coleta de dados
-- **Entregas:** Plano de segurança e medidas implementadas
+- **Deliverables:** Plano de segurança e medidas implementadas
 
 ## 📝 Observações e Adaptações
 

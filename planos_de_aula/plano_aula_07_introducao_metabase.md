@@ -236,7 +236,7 @@ Ao final desta aula, os alunos serão capazes de:
 ### **Projeto Atlas**
 - **Status:** Dashboard básico criado
 - **Próximo passo:** Dashboards avançados
-- **Entregas:** Dashboard funcionando com dados
+- **Deliverables:** Dashboard funcionando com dados
 
 ## 📝 Observações e Adaptações
 
