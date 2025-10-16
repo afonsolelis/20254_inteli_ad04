@@ -72,8 +72,103 @@ Apresentar conceitos fundamentais de IoT e arquitetura básica, aplicando no cas
 
 #### **Camada 2: Comunicação (Rede)**
 - **Função:** Transmissão de dados entre dispositivos
-- **Componentes:** Gateways, protocolos (WiFi, Bluetooth, LoRa, 4G/5G)
+- **Componentes:** Gateways, protocolos de comunicação
 - **Exemplo LogiTrack:** 4G/5G para estrada, WiFi para depósitos, LoRa para áreas remotas
+
+**Tipos de Redes IoT:**
+
+**🌐 Área Metropolitana (WAN-MAN):**
+
+| **Tecnologia** | **Função** | **Alcance** | **Padrão** | **Características** | **Aplicação LogiTrack** | **Aplicação Volkswagen** |
+|----------------|------------|-------------|------------|---------------------|-------------------------|--------------------------|
+| **LTE/GSM** | Conectividade móvel | Nacional | 4G/5G | Alta velocidade | Conectividade principal em estradas | Backup para conectividade externa |
+| **WiMAX** | Internet sem fio | Longa distância | IEEE 802.16 | Cobertura ampla | Áreas sem cobertura 4G/5G | Conectividade alternativa |
+| **SIGFOX** | Rede IoT | Baixo consumo | Proprietário | Ultra baixo consumo | Sensores de baixo consumo | Sensores de monitoramento |
+| **NB-IoT** | IoT banda estreita | Nacional | 3GPP | Baixo consumo, baixo custo | Sensores de longa duração | Sensores industriais |
+| **LoRa** | Long Range | Até 15km | LoRaWAN | Baixo consumo, longo alcance | Áreas rurais e remotas | Sensores de linha externa |
+| **MimoMAX** | Alta capacidade | Médio alcance | Proprietário | Alta capacidade | Dados de alta velocidade | Transmissão de dados críticos |
+
+**📡 Arquitetura LoRaWAN:**
+
+![Arquitetura LoRaWAN](https://res.cloudinary.com/dyhjjms8y/image/upload/v1760614606/lora_iot_architecture.png)
+
+**Como funciona a rede LoRa:**
+1. **Dispositivos IoT (End Nodes):** Sensores coletam dados (inventário, gás, água, lixeiras, máquinas, fumaça)
+2. **Concentrador/Gateway:** Recebe dados via LoRa® RF LoRaWAN™
+3. **Backhaul:** Transmissão via 3G/Ethernet para servidores
+4. **Servidores de Rede:** Gerenciam a rede LoRaWAN
+5. **Servidores de Aplicação:** Processam dados com segurança AES
+6. **Segurança:** Payload criptografado com AES em toda a jornada
+
+**🛰️ Cobertura via Satélite (WAN-RAN):**
+
+| **Tecnologia** | **Função** | **Alcance** | **Padrão** | **Características** | **Aplicação LogiTrack** | **Aplicação Volkswagen** |
+|----------------|------------|-------------|------------|---------------------|-------------------------|--------------------------|
+| **VSAT** | Comunicação via satélite | Global | Proprietário | Áreas isoladas | Caminhões em estradas remotas | Backup para áreas sem cobertura |
+
+**🏠 Área Local (WLAN):**
+
+| **Tecnologia** | **Função** | **Alcance** | **Padrão** | **Características** | **Aplicação LogiTrack** | **Aplicação Volkswagen** |
+|----------------|------------|-------------|------------|---------------------|-------------------------|--------------------------|
+| **WiFi** | Conectividade local | 50-100m | IEEE 802.11 | Alta velocidade | Conectividade em depósitos | Conectividade interna da fábrica |
+| **Wi-GIG** | WiFi alta frequência | 10m | IEEE 802.11.ad | Altas taxas de dados | Transmissão de dados críticos | Conectividade de alta velocidade |
+| **AdHoc** | Rede mesh | 50-200m | IEEE 802.15.4 | Sem infraestrutura | Redes temporárias | Sensores de linha sem fio |
+
+**📱 Rede P2P (Ponto a Ponto):**
+
+| **Tecnologia** | **Função** | **Alcance** | **Padrão** | **Armazenamento** | **Aplicação LogiTrack** | **Aplicação Volkswagen** |
+|----------------|------------|-------------|------------|-------------------|-------------------------|--------------------------|
+| **RFID** | Identifica e rastreia etiquetas via campos magnéticos | Até 10m | ISO/IEC 18000 | 96 bits (ativa/passiva) | Rastreamento de cargas e containers | Identificação de peças na linha |
+| **NFC** | Comunicação segura de curta distância | < 10cm | ISO/IEC 18000-3 | Dados de identificação | Autenticação de motoristas | Acesso a sistemas internos |
+
+**Componentes RFID:**
+- **Etiqueta:** Armazena dados de identificação
+- **Leitores:** Emitem sinais de rádio e recebem respostas
+- **Antenas:** Transmitem e recebem sinais
+- **Mediador:** Filtra e agrupa dados
+- **Aplicações:** Processam informações recebidas
+
+**Funcionamento RFID:**
+1. **Leitor** emite sinal de rádio
+2. **Tag** responde com identificação
+3. **Mediador** filtra e agrupa dados
+4. **Aplicação** processa informações
+
+**👤 Rede Pessoal (WPAN):**
+
+| **Tecnologia** | **Tipo** | **Alcance** | **Padrão** | **Características** | **Aplicação LogiTrack** | **Aplicação Volkswagen** |
+|----------------|----------|-------------|------------|---------------------|-------------------------|--------------------------|
+| **Bluetooth** | Radiofrequência por difusão | Curtas distâncias | IEEE 802.15.1 | Flexibilidade e alta qualidade | Comunicação local entre dispositivos | Conectividade entre equipamentos |
+| **Zigbee** | Rede mesh | 10-100m | IEEE 802.15.4 | Baixo consumo, Address Translation | Sensores de depósito | Sensores de linha, automação |
+| **WiFi** | Radiofrequência por difusão | Médias distâncias | IEEE 802.11.b,g,n | Flexível, alta qualidade | Conectividade local em depósitos | Conectividade interna da fábrica |
+
+**Funcionalidades Zigbee:**
+- **Address Translation:** Tradução de endereços
+- **Packet Segmentation:** Segmentação de pacotes
+- **Network Routing:** Roteamento de rede
+- **Mesh Network:** Rede em malha para redundância
+
+**Upgrades WiFi:**
+- **Wi-GIG (802.11.ad):** Altas taxas de comunicação
+- **WiFi 6 (802.11.ax):** Maior eficiência e capacidade
+
+**🌐 Protocolos de Rede:**
+
+| **Protocolo** | **Função** | **Especificação** | **Vantagem** | **Aplicação LogiTrack** | **Aplicação Volkswagen** |
+|---------------|------------|-------------------|--------------|-------------------------|--------------------------|
+| **IPv6** | Endereçamento TCP/IP | 128 bits | Bilhões de endereços | Endereçamento para milhões de dispositivos | Endereçamento para equipamentos industriais |
+| **4G/5G (LTE)** | Redes móveis | HTTP/HTTPS | Conectividade móvel global | Conectividade principal em estradas | Backup para conectividade externa |
+| **HTTP/HTTPS** | Protocolo web | TCP/IP | Segurança e criptografia | Transmissão segura de dados | Comunicação segura com sistemas |
+
+**Evolução IPv6:**
+- **IPv4:** 32 bits (4,3 bilhões de endereços)
+- **IPv6:** 128 bits (340 undecilhões de endereços)
+- **Necessidade:** Crescimento exponencial de dispositivos IoT
+
+**Características 4G/5G:**
+- **4G (LTE):** Velocidade até 100 Mbps
+- **5G:** Velocidade até 10 Gbps, baixa latência
+- **Segurança:** HTTPS com criptografia SSL/TLS
 
 #### **Camada 3: Processamento**
 - **Função:** Análise e transformação de dados
@@ -95,11 +190,22 @@ Apresentar conceitos fundamentais de IoT e arquitetura básica, aplicando no cas
 
 **Problema Real:** Conectividade não é garantida em todas as áreas
 
-**Solução:** Arquitetura robusta com:
-- Armazenamento local (Edge Computing)
-- Sincronização quando conectividade retorna
-- Redundância de comunicação
-- Processamento distribuído
+**Solução:** Arquitetura robusta com múltiplas opções de conectividade:
+- **4G/5G (LTE/GSM):** Conectividade principal em áreas urbanas
+- **WiFi:** Conectividade local em depósitos e centros
+- **LoRa:** Long Range para áreas rurais e remotas (até 15km, baixo consumo)
+- **VSAT (Satélite):** Backup para áreas sem cobertura celular
+- **Armazenamento local (Edge Computing):** Dados salvos localmente
+- **Sincronização:** Dados enviados quando conectividade retorna
+- **Redundância:** Múltiplas tecnologias de comunicação
+- **Processamento distribuído:** Decisões locais quando offline
+
+**Vantagens do LoRa para LogiTrack:**
+- **Alcance:** Até 15km em áreas rurais
+- **Baixo consumo:** Baterias duram anos
+- **Custo:** Economia em áreas sem cobertura 4G/5G
+- **Segurança:** Criptografia AES end-to-end
+- **Aplicação:** Ideal para caminhões em estradas rurais
 
 ### 🏗️ Atividade Prática: War Room IoT - Construindo a Arquitetura da LogiTrack
 
@@ -115,9 +221,21 @@ Apresentar conceitos fundamentais de IoT e arquitetura básica, aplicando no cas
 ```
 Camada 4 - Aplicação: Dashboard, Alertas, Relatórios
 Camada 3 - Processamento: Edge + Cloud + Database
-Camada 2 - Comunicação: 4G/5G + WiFi + LoRa
+Camada 2 - Comunicação: 4G/5G + WiFi + LoRa + VSAT (Satélite)
 Camada 1 - Percepção: GPS + Temperatura + Vibração
 ```
+
+**Opções de Conectividade por Cenário:**
+- **Estrada (Área Metropolitana):** 4G/5G (LTE/GSM)
+- **Depósitos (Área Local):** WiFi (IEEE 802.11)
+- **Áreas Rurais (Long Range):** LoRa (até 15km, baixo consumo), NB-IoT
+- **Áreas Isoladas (Satélite):** VSAT
+- **Comunicação Local:** Bluetooth, Zigbee
+
+**Fluxo de Dados LoRa (como na figura):**
+1. **Sensores do caminhão** → **Gateway LoRa** → **Backhaul 3G/Ethernet** → **Servidores** → **Dashboard LogiTrack**
+2. **Segurança:** Dados criptografados com AES em toda a jornada
+3. **Vantagem:** Funciona mesmo em áreas sem cobertura celular
 
 ### 🏭 Atividade Prática: Arquitetura IoT para Volkswagen - Projeto TAPI
 
@@ -140,9 +258,17 @@ Camada 1 - Percepção: GPS + Temperatura + Vibração
 ```
 Camada 4 - Aplicação: Dashboard de Observabilidade, KPIs, Alertas
 Camada 3 - Processamento: Pipeline de Dados, Análise Preditiva, ML
-Camada 2 - Comunicação: Rede Industrial, Protocolos IoT, Gateways
+Camada 2 - Comunicação: Rede Industrial (Ethernet, WiFi, Zigbee), Protocolos IoT
 Camada 1 - Percepção: Leitores Keyence/SICK, Sensores de Linha, RFID
 ```
+
+**Tecnologias de Rede Industrial:**
+- **Área Local (WLAN):** WiFi (IEEE 802.11) para conectividade interna
+- **Rede Pessoal (WPAN):** Zigbee para sensores de linha
+- **Rede P2P:** RFID para identificação de peças (96 bits, ativa/passiva)
+- **Ethernet Industrial:** Conectividade robusta para equipamentos
+- **Protocolos:** IPv6 para endereçamento de bilhões de dispositivos
+- **Segurança:** HTTPS com criptografia para dados sensíveis
 
 **Elementos Obrigatórios no Excalidraw:**
 - ✅ **4 Camadas da Arquitetura IoT**
@@ -156,6 +282,14 @@ Camada 1 - Percepção: Leitores Keyence/SICK, Sensores de Linha, RFID
 - Que dados coletariam dos leitores Keyence e SICK?
 - Como processariam os dados históricos do CSV?
 - Que insights o dashboard forneceria para otimizar o fluxo de peças?
+- Que tecnologias de rede usariam na linha de montagem? (WiFi, Zigbee, Ethernet)
+- Como garantir conectividade robusta em ambiente industrial?
+- Como o LoRa se aplicaria na LogiTrack? (áreas rurais, baixo consumo)
+- Que vantagens o LoRa oferece sobre 4G/5G em áreas remotas?
+- Como RFID (96 bits) se aplicaria na identificação de peças?
+- Que vantagens o NFC oferece para autenticação de motoristas?
+- Por que IPv6 é necessário para bilhões de dispositivos IoT?
+- Como Bluetooth e Zigbee se complementam em ambientes industriais?
 
 ### 🎯 Discussão Coletiva: Perguntas-Chave sobre IoT
 
