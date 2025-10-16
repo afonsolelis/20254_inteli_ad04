@@ -1,7 +1,7 @@
 {
   "title": "Conventional Commits Guide",
   "version": "1.0.0",
-  "description": "A specification for adding human and machine readable meaning to commit messages",
+  "directions": "A specification for adding human and machine readable meaning to commit messages",
   "format": "<type>[optional scope]: <description>\\n\\n[optional body]\\n\\n[optional footer(s)]",
   "types": [
     {
