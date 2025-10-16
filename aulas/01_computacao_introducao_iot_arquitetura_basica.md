@@ -119,6 +119,44 @@ Camada 2 - Comunicação: 4G/5G + WiFi + LoRa
 Camada 1 - Percepção: GPS + Temperatura + Vibração
 ```
 
+### 🏭 Atividade Prática: Arquitetura IoT para Volkswagen - Projeto TAPI
+
+**Cenário:** Agora vocês são consultores especialistas em IoT. A Volkswagen do Brasil contratou vocês para resolver um problema crítico: **controle de consumo de peças na linha de montagem**.
+
+**O Desafio Volkswagen:**
+- **Problema:** Falta de observabilidade unificada na arquitetura IoT existente
+- **Objetivo:** Painel de observabilidade para otimizar fluxo de peças (rodas e bancos)
+- **Dados:** CSV com últimos 2 meses (id, modelo, data, local de montagem, configurações)
+- **Tecnologia Atual:** Leitores Keyence e SICK, servidor dedicado IoT
+
+**Instruções para os Grupos:**
+1. **Leiam o arquivo TAPI.md** (README do projeto Volkswagen)
+2. **Analisem o problema** da Volkswagen (10 min)
+3. **Desenhem no Excalidraw** uma arquitetura IoT completa para resolver o problema (25 min)
+4. **Apresentem a solução** (3 min por grupo)
+5. **Comparem** com a solução LogiTrack (5 min)
+
+**Template de Arquitetura Volkswagen:**
+```
+Camada 4 - Aplicação: Dashboard de Observabilidade, KPIs, Alertas
+Camada 3 - Processamento: Pipeline de Dados, Análise Preditiva, ML
+Camada 2 - Comunicação: Rede Industrial, Protocolos IoT, Gateways
+Camada 1 - Percepção: Leitores Keyence/SICK, Sensores de Linha, RFID
+```
+
+**Elementos Obrigatórios no Excalidraw:**
+- ✅ **4 Camadas da Arquitetura IoT**
+- ✅ **Fluxo de Dados** (coleta → processamento → visualização)
+- ✅ **Tecnologias Específicas** (Keyence, SICK, CSV, Dashboard)
+- ✅ **KPIs e Métricas** (consumo de peças, tempo de ciclo, qualidade)
+- ✅ **Integração com Sistemas Existentes**
+
+**Perguntas para Reflexão:**
+- Como a arquitetura IoT resolve o problema de observabilidade?
+- Que dados coletariam dos leitores Keyence e SICK?
+- Como processariam os dados históricos do CSV?
+- Que insights o dashboard forneceria para otimizar o fluxo de peças?
+
 ### 🎯 Discussão Coletiva: Perguntas-Chave sobre IoT
 
 **Após as apresentações, vamos discutir os conceitos fundamentais:**
@@ -170,12 +208,17 @@ Camada 1 - Percepção: GPS + Temperatura + Vibração
 - Compreender os conceitos fundamentais de IoT
 - Identificar as 4 camadas da arquitetura IoT
 - Desenhar diagramas de arquitetura básica
-- Aplicar conceitos em cenários reais
+- Aplicar conceitos em cenários reais (LogiTrack e Volkswagen)
+- Analisar problemas industriais e propor soluções IoT
 - Trabalhar colaborativamente em equipe
+- Usar ferramentas de desenho (Excalidraw) para arquitetura
 
 ### 🚀 Próximos Passos
 
 **Hoje:** Entendemos o que é IoT e sua arquitetura básica
+- ✅ Aplicamos conceitos em dois cenários reais (LogiTrack e Volkswagen)
+- ✅ Desenvolvemos arquiteturas IoT usando Excalidraw
+- ✅ Analisamos problemas industriais e propusemos soluções
 
 **Próxima aula:** Descobriremos quanto tudo isso vai custar - precificação e impactos econômicos
 
