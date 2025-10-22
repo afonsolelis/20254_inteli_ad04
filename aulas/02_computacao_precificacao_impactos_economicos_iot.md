@@ -32,7 +32,7 @@ Analisar os aspectos econômicos e de precificação em projetos IoT, aplicando 
 
 ### 📖 O Cenário: A Realidade dos Números
 
-*"É 9h da manhã de uma terça-feira ensolarada em São Paulo. Na sala de reuniões da LogiTrack, o CEO Henrique Duarte olha para os números que a equipe técnica apresentou ontem: uma solução IoT completa para 120 caminhões. Mas agora ele precisa da resposta que pode fazer ou quebrar o projeto: **quanto tudo isso vai custar?**"*
+*"São 9h da manhã de uma terça-feira ensolarada em São Paulo. Na sala de reuniões da LogiTrack, o CEO Henrique Duarte olha para os números que a equipe técnica apresentou ontem: uma solução IoT completa para 120 caminhões. Mas agora ele precisa da resposta que pode fazer ou quebrar o projeto: **quanto tudo isso vai custar?**"*
 
 **A Situação:** Após a aula de ontem, a equipe técnica da LogiTrack apresentou uma arquitetura IoT completa. Agora, o CEO precisa entender:
 - Quanto custa implementar a solução?
