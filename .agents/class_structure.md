@@ -11,27 +11,27 @@
 ## Estrutura da Classe
 
 ### Daily Meeting
-- **Duração:** 15 minutos
-- **Descrição:** Daily dos grupos - acompanhamento de progresso e alinhamento
+- **Duração sugerida:** 15 minutos
+- **Formato:** check-in rápido por squads, conexão com o capítulo anterior do Projeto Atlas e identificação de impedimentos.
 
 ### Conteúdo Principal
-- **Duração:** 1 hora e 45 minutos
-- **Seções:**
-  1. Introdução e contextualização
-  2. Conteúdo teórico
-  3. Atividade prática
-  4. Discussão e dúvidas
-  5. Fechamento e próximos passos
+- **Duração sugerida:** 1 hora e 45 minutos
+- **Macroblocos utilizados nas aulas 01–03:**
+  1. **Story catch-up:** retomar o episódio anterior do Projeto Atlas.
+  2. **Deep dive técnico:** exploração guiada do tema da semana (arquitetura, finanças, componentes).
+  3. **Aplicação contextualizada:** discussão/atividade usando dados ou cenários da LogiTrack.
+  4. **Debrief coletivo:** compartilhamento de aprendizado e conexão com o próximo capítulo.
+  5. **Call-to-action:** direcionamento para o autoestudo e preparação da aula seguinte.
 
 ## Tabela de Autoestudos
 
 Tabela de autoestudos para acompanhamento individual:
 
-| Atividade | Descrição | Tempo Estimado | Status | Observações |
-|-----------|-----------|----------------|--------|-------------|
-| Leitura prévia | Material de apoio e artigos relacionados | 30-45 min | Pendente | |
-| Exercícios práticos | Implementação de conceitos em laboratório | 1-2 horas | Pendente | |
-| Projeto Atlas | Desenvolvimento do projeto integrador | 2-3 horas | Pendente | |
+| Aula | Foco do autoestudo | Tempo Estimado | Entrega esperada | Observações |
+|------|--------------------|----------------|------------------|--------------|
+| 01 – O Despertar da LogiTrack | Conceitos fundamentais de IoT e arquitetura em camadas | 45-60 min | Resumo dos principais componentes e camadas | Conectar com o diagnóstico inicial da empresa |
+| 02 – O Custo da Inovação | Modelagem financeira, ROI e métricas de viabilidade | 45-60 min | Planilha/insights de custos e payback para o Projeto Atlas | Reforçar CAPEX × OPEX |
+| 03 – Conectando Pontos | Seleção de dispositivos, protocolos e layout de produção | 45-60 min | Tabela de decisão técnica + análise de riscos | Preparação para a atividade em sala |
 
 ## Template de Agenda
 
@@ -39,12 +39,11 @@ Tabela de autoestudos para acompanhamento individual:
 
 | Horário | Atividade | Descrição | Tipo |
 |---------|-----------|------------|------|
-| 0:00 - 0:15 | Daily dos Grupos | Acompanhamento de progresso dos grupos no Projeto Atlas | Reunião de Grupo |
-| 0:15 - 0:30 | Introdução e Contextualização | Apresentação do tema e conexão com o projeto | Teórico |
-| 0:30 - 1:00 | Conteúdo Teórico | Fundamentos e conceitos principais | Teórico |
-| 1:00 - 1:30 | Atividade Prática | Exercícios e implementação prática | Prático |
-| 1:30 - 1:45 | Discussão e Dúvidas | Clarificação de conceitos e resolução de dúvidas | Discussão |
-| 1:45 - 2:00 | Fechamento e Próximos Passos | Síntese da aula e orientações para próxima semana | Encerramento |
+| 0:00 - 0:15 | Daily dos grupos | Check-in narrativo + impedimentos do Projeto Atlas | Reunião de grupo |
+| 0:15 - 0:35 | Story catch-up e provocação | Relembrar cliffhanger anterior e lançar perguntas do capítulo atual | Narrativa guiada |
+| 0:35 - 1:05 | Deep dive técnico | Conceitos, tabelas e ferramentas relacionadas ao episódio | Teórico |
+| 1:05 - 1:35 | Aplicação contextualizada | Exercício, estudo de caso ou simulação usando dados da LogiTrack | Prático |
+| 1:35 - 1:55 | Debrief e próximos passos | Compartilhamento, conexão com autoestudo e teaser da aula seguinte | Discussão/encerramento |
 
 ## Estrutura de Conteúdo
 
@@ -74,6 +73,18 @@ Tabela de autoestudos para acompanhamento individual:
 - Desenvolvimento incremental
 - Aplicação de conceitos em cenário real
 - Documentação e apresentação
+
+## Linha narrativa inicial (Aulas 01–03)
+
+| Aula | Capítulo do Projeto Atlas | Objetivo narrativo | Entregável técnico principal |
+|------|---------------------------|--------------------|------------------------------|
+| 01 | **“O Despertar da LogiTrack”** | Diagnosticar perdas e introduzir a arquitetura IoT que pode salvar a empresa | Mapa das quatro camadas IoT aplicadas à frota da LogiTrack |
+| 02 | **“O Custo da Inovação”** | Convencer o conselho via análise econômica e ROI | Quadro CAPEX/OPEX + cálculo de payback do Projeto Atlas |
+| 03 | **“Conectando Pontos”** | Selecionar dispositivos, protocolos e layout físico para iniciar a implantação | Tabelas de decisão de conectividade/protocolos + arranjo físico alinhado ao fluxo de dados |
+
+### Próximos passos sugeridos
+- Aula 04 introduzirá o capítulo “Defendendo a Rota” com foco em segurança IoT.
+- As aulas subsequentes aprofundarão coleta de dados, pipelines e visualização, sempre retomando o arco narrativo.
 
 ## Estrutura de Avaliação
 
