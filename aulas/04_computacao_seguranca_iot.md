@@ -5,8 +5,8 @@
 
 ## Tempo estimado
 - Daily inicial (15 min)
-- Aula narrativa expositiva (55 min) — 7 atos com storytelling
-- Atividade de grupo em sala (35 min) — elaboração de apresentação em markdown
+- Aula expositiva (55 min)
+- Atividade de grupo em sala (35 min)
 - Apresentações dos grupos (35 min) — 5 grupos × 7 min cada
 
 ## Objetivos de aprendizagem
@@ -25,7 +25,7 @@
 
 ---
 
-## Quebra de Sigilo — Storytelling da Aula
+## Quebra de Sigilo
 
 ### Ato 1 — O incidente: terça-feira, 08:47h
 
@@ -116,7 +116,7 @@ A equipe define um plano de mitigação estruturado por camada da arquitetura Io
 | Tópicos abertos | Namespace por dispositivo + ACL fina | `lt/{deviceId}/telemetria` (publish), `lt/{deviceId}/cmd` (subscribe) | Configuração manual por dispositivo |
 | QoS inadequado | Telemetria QoS 1, comandos QoS 2 | Balanceio entre confiabilidade e latência | Overhead de rede |
 
-**Tabela de QoS recomendado:**
+**QoS recomendado:**
 
 | Tipo de mensagem | QoS | Justificativa |
 | --- | --- | --- |
@@ -214,7 +214,7 @@ Marina desenha o diagrama de **Táticas Arquiteturais** aplicado ao controle de 
         ▼                     ▼                     ▼
 ```
 
-**Tabela de Táticas e Mecanismos:**
+**Táticas e Mecanismos:**
 
 | Tática Arquitetural | Mecanismos Técnicos | Implementação no Atlas |
 | --- | --- | --- |
@@ -235,7 +235,7 @@ Juliana apresenta a arquitetura final do Projeto Atlas, inspirada em padrões de
 | **Nível 1: Local** | Gateway conectado à rede local (WiFi/Ethernet) | 🟢 99,5% | Monitoramento via app local, controle manual | Internet indisponível; operação em depósito |
 | **Nível 2: Internet** | Gateway conectado à nuvem via 4G/LTE | 🟢 99,9% | Telemetria em tempo real, alertas automáticos, dashboards | Operação normal em rota |
 
-**Diagrama de Contingência:**
+**Contingência:**
 
 ```
 Internet disponível? ──► SIM ──► Nível 2 (Cloud)
@@ -397,7 +397,7 @@ A diretoria é informada em linguagem executiva. Henrique Duarte questiona o inv
 
 ---
 
-## Referências Técnicas desta Aula
+## Referências
 
 Esta aula foi baseada em pesquisas científicas de arquitetura de sistemas IoT:
 
